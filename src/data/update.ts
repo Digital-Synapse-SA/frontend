@@ -61,9 +61,9 @@ export const updateReleaseNotes = (hass: HomeAssistant, entityId: string) =>
     entity_id: entityId,
   });
 
-const HOME_ASSISTANT_CORE_TITLE = "Home Assistant Core";
-const HOME_ASSISTANT_SUPERVISOR_TITLE = "Home Assistant Supervisor";
-const HOME_ASSISTANT_OS_TITLE = "Home Assistant Operating System";
+const SMARTELLIGENT_CORE_TITLE = "Smartelligent Core";
+const SMARTELLIGENT_SUPERVISOR_TITLE = "Smartelligent Supervisor";
+const SMARTELLIGENT_OS_TITLE = "Smartelligent Operating System";
 
 export const filterUpdateEntities = (
   entities: HassEntities,
@@ -74,22 +74,22 @@ export const filterUpdateEntities = (
       (entity) => computeStateDomain(entity) === "update"
     ) as UpdateEntity[]
   ).sort((a, b) => {
-    if (a.attributes.title === HOME_ASSISTANT_CORE_TITLE) {
+    if (a.attributes.title === SMARTELLIGENT_CORE_TITLE) {
       return -3;
     }
-    if (b.attributes.title === HOME_ASSISTANT_CORE_TITLE) {
+    if (b.attributes.title === SMARTELLIGENT_CORE_TITLE) {
       return 3;
     }
-    if (a.attributes.title === HOME_ASSISTANT_OS_TITLE) {
+    if (a.attributes.title === SMARTELLIGENT_OS_TITLE) {
       return -2;
     }
-    if (b.attributes.title === HOME_ASSISTANT_OS_TITLE) {
+    if (b.attributes.title === SMARTELLIGENT_OS_TITLE) {
       return 2;
     }
-    if (a.attributes.title === HOME_ASSISTANT_SUPERVISOR_TITLE) {
+    if (a.attributes.title === SMARTELLIGENT_SUPERVISOR_TITLE) {
       return -1;
     }
-    if (b.attributes.title === HOME_ASSISTANT_SUPERVISOR_TITLE) {
+    if (b.attributes.title === SMARTELLIGENT_SUPERVISOR_TITLE) {
       return 1;
     }
     return caseInsensitiveStringCompare(
@@ -225,15 +225,15 @@ export const getUpdateType = (
   }
 
   const title = stateObj.attributes.title || "";
-  if (title === HOME_ASSISTANT_CORE_TITLE) {
+  if (title === SMARTELLIGENT_CORE_TITLE) {
     return "home_assistant";
   }
 
-  if (title === HOME_ASSISTANT_OS_TITLE) {
+  if (title === SMARTELLIGENT_OS_TITLE) {
     return "home_assistant_os";
   }
 
-  if (title !== HOME_ASSISTANT_SUPERVISOR_TITLE) {
+  if (title !== SMARTELLIGENT_SUPERVISOR_TITLE) {
     return "addon";
   }
   return "generic";
