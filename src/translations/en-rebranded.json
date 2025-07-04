@@ -1,0 +1,134 @@
+{
+  "ui": {
+    "panel": {
+      "config": {
+        "info": {
+          "home_assistant_version": "Smartelligent Home version",
+          "restarting": "Restarting Smartelligent Home",
+          "restart_home_assistant": "Restart Smartelligent Home",
+          "stop_home_assistant": "Stop Smartelligent Home",
+          "started": "Smartelligent Home has started!",
+          "starting": "Smartelligent Home is starting. Not everything will be available until it is finished.",
+          "restart_home_assistant_safe_mode": "Restart Smartelligent Home in safe mode",
+          "text_safe_mode": "Smartelligent Home is running in safe mode, custom integrations and frontend modules are not available. Restart Smartelligent Home to exit safe mode.",
+          "heading_restart": "Restart Smartelligent Home",
+          "title_restart": "Restart Smartelligent Home",
+          "confirm_title_restart": "Restart Smartelligent Home?",
+          "confirm_title_stop": "Stop Smartelligent Home?",
+          "failed_restart": "Failed to restart Smartelligent Home",
+          "description_restart_system": "Restarts the system running Smartelligent Home and all add-ons.",
+          "confirm_description_restart_system": "This will reboot the complete system which includes Smartelligent Home and all the add-ons.",
+          "description_shutdown_system": "Shuts down the system running Smartelligent Home and all add-ons.",
+          "confirm_description_shutdown_system": "This will shut down the complete system which includes Smartelligent Home and all add-ons.",
+          "title_restart_safe_mode": "Restart Smartelligent Home in safe mode",
+          "description_restart_safe_mode": "Restarts Smartelligent Home without loading any custom integrations and frontend modules.",
+          "confirm_title_restart_safe_mode": "Restart Smartelligent Home in safe mode?",
+          "confirm_description_restart_safe_mode": "This will restart Smartelligent Home without loading any custom integrations and frontend modules.",
+          "failed_restart_safe_mode": "Failed to restart Smartelligent Home"
+        },
+        "backup": {
+          "title": "Smartelligent Home Backup Emergency Kit",
+          "description": "This emergency kit contains your backup encryption key. You need this key to be able to restore your Smartelligent Home backups.",
+          "backup_home_assistant": "Backing up Smartelligent Home",
+          "await_home_assistant_restart": "Waiting for Smartelligent Home to restart",
+          "check_home_assistant": "Checking Smartelligent Home",
+          "restore_home_assistant": "Restoring Smartelligent Home",
+          "description_no_backup": "Manage backups and restore Smartelligent Home to a previous state",
+          "text_backup_file": "Please choose a Smartelligent Home backup file (.tar)",
+          "title_cloud_sync": "Smartelligent Home Cloud cannot synchronize",
+          "description_cloud_sync": "Add Smartelligent Home settings data to synchronize this backup to Smartelligent Home Cloud.",
+          "description_default_location": "Change the default location where local backups are stored on your Smartelligent Home instance.",
+          "description_automatic": "Let Smartelligent Home take care of your backups by creating a scheduled backup that also removes older backups.",
+          "description_upload_locations": "Smartelligent Home will upload to these locations when an automatic backup is made. You can use all locations for manual backups.",
+          "ha_settings": "Smartelligent Home settings",
+          "data": "Smartelligent Home data that is included",
+          "description_time_automatic": "Let Smartelligent Home take care of your backups by creating a scheduled backup that also removes older backups.",
+          "custom_time_description": "The optimal time is after Smartelligent Home finished cleaning up the database. This is done at {time}.",
+          "schedule_time_description": "When the backup creation starts. By default Smartelligent Home picks the optimal time between {time_range_start} and {time_range_end}.",
+          "cloud_description": "Smartelligent Home Cloud backup stores only one backup. The oldest backups are deleted.",
+          "location_encrypted_cloud_description": "Smartelligent Home Cloud is the privacy-focused cloud. This is why it will only accept encrypted backups and why we don't store your encryption key.",
+          "manual_description": "Includes Smartelligent Home settings and history.",
+          "cloud_agent_no_subcription": "You currently do not have an active Smartelligent Home Cloud subscription."
+        },
+        "integrations": {
+          "enabled_description": "Disabled entities will not be added to Smartelligent Home.",
+          "enabled_delay_confirm": "The enabled entities will be added to Smartelligent Home in {delay} seconds",
+          "enabled_restart_confirm": "Restart Smartelligent Home to finish enabling the entities",
+          "enable_polling_description": "If Smartelligent Home should automatically poll {integration} entities for state changes.",
+          "restart_home_assistant": "You need to restart Smartelligent Home for your changes to take effect.",
+          "restore": "Restore the last known value when Smartelligent Home starts",
+          "restore_state": "Restore state and time when Smartelligent Home starts"
+        },
+        "network": {
+          "caption": "Smartelligent Home URL",
+          "description": "Configure what website addresses Smartelligent Home should share with other devices when they need to fetch data from Smartelligent Home (eg. to play text-to-speech or other hosted media).",
+          "external_use_ha_cloud": "Use Smartelligent Home Cloud",
+          "manage_ha_cloud": "Manage Smartelligent Home Cloud"
+        },
+        "energy": {
+          "text_returned_to_grid": "Energy returned to the grid allows tracking how much energy you've produced through solar panels, wind turbines, or other means of energy generation and fed back into the grid. This allows Smartelligent Home to track your whole home energy usage.",
+          "cost_para": "Select how Smartelligent Home should keep track of the costs of the consumed energy.",
+          "sub_solar": "Let Smartelligent Home monitor your solar panels and give you insight on their performance.",
+          "sub_gas": "Let Smartelligent Home monitor your gas usage.",
+          "cost_para_gas": "Select how Smartelligent Home should keep track of the costs of the consumed gas.",
+          "sub_water": "Let Smartelligent Home monitor your water usage.",
+          "cost_para_water": "Select how Smartelligent Home should keep track of the costs of the consumed water.",
+          "sub_devices": "Tracking the energy usage of individual devices allows Smartelligent Home to break down your energy usage by device."
+        },
+        "areas": {
+          "introduction": "Areas are used to organize where devices are. This information will be used throughout Smartelligent Home to help you in organizing your interface, permissions, and integrations with other systems."
+        },
+        "system": {
+          "description": "Manage updates of Smartelligent Home, add-ons, and devices"
+        },
+        "repairs": {
+          "description": "Find and fix issues with your Smartelligent Home instance"
+        },
+        "addons": {
+          "secondary": "Run extra applications next to Smartelligent Home"
+        },
+        "backup": {
+          "secondary": "Generate backups of your Smartelligent Home configuration"
+        },
+        "onboarding": {
+          "header": "Configure Smartelligent Home"
+        }
+      }
+    },
+    "common": {
+      "voice": {
+        "did_not_hear": "Smartelligent Home did not hear anything",
+        "not_supported_microphone_browser": "Your connection to Smartelligent Home is not secured using HTTPS. This causes browsers to block Smartelligent Home from accessing the microphone.",
+        "not_supported_microphone_documentation": "Use the Smartelligent Home app or visit {documentation_link} to learn how to use a secure URL"
+      },
+      "my": {
+        "not_supported": "This redirect is not supported by your Smartelligent Home instance. Check the {link} for the supported redirects and the version they where introduced.",
+        "component_not_loaded": "This redirect is not supported by your Smartelligent Home instance. You need the integration {integration} to use this redirect.",
+        "no_supervisor": "This redirect is not supported by your Smartelligent Home installation. It needs either the Smartelligent Home Operating System or Smartelligent Home Supervised installation method. For more information, see the {docs_link}.",
+        "not_app": "This redirect only works from a mobile device that has the Smartelligent Home Companion app installed. {link}.",
+        "my_link": "get My Smartelligent Home link",
+        "faq_link": "My Smartelligent Home FAQ"
+      },
+      "matter": {
+        "note": "You need to use the Smartelligent Home Companion app on your mobile phone to add Matter devices.",
+        "no_home_assistant": "I can't find Smartelligent Home on the list",
+        "redirect": "You are redirected to the Smartelligent Home app. Please follow the instructions."
+      },
+      "automation": {
+        "triggered_by_homeassistant_stopping": "triggered by Smartelligent Home stopping",
+        "triggered_by_homeassistant_starting": "triggered by Smartelligent Home starting"
+      },
+      "updates": {
+        "update_available_description": "A new version of {name} is available. You can either install this update now or wait for Smartelligent Home to do it automatically."
+      },
+      "voice_assistants": {
+        "assistants": {
+          "cloud": {
+            "title": "Smartelligent Home Cloud",
+            "and_more": "And more..."
+          }
+        }
+      }
+    }
+  }
+} 
